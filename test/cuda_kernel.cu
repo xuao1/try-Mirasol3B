@@ -34,7 +34,7 @@ int main() {
     cudaMemcpy(in_d, in_h, size, cudaMemcpyHostToDevice);
 
     // 配置内核执行参数
-    int threads = 256;
+    int threads = 512;
     int blocks = (N + threads - 1) / threads;
 
     // 创建 CUDA 流
