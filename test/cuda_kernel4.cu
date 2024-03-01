@@ -65,7 +65,7 @@ int main() {
             graphCreated=true;
         }
         cudaGraphLaunch(instance, stream);
-        cudaStreamSynchronize(stream);
+        // cudaStreamSynchronize(stream);
     }
 
     printf("Done\n");
